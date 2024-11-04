@@ -18,8 +18,6 @@
 
 **Resumo do Produto:**
 
-![logo](https://freckle-dry-c20.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F683ff889-697a-4646-97b5-f9452cff14ab%2F51be22a0-d4b6-4beb-be3b-7bbb97b789d8%2FUntitled.png?table=block&id=156695df-3a52-4e35-b80e-a85f67da794d&spaceId=683ff889-697a-4646-97b5-f9452cff14ab&width=330&userId=&cache=v2)
-
 PrimárIA é um software web e mobile de atenção primária à saúde, destinado a ajudar pacientes no acompanhamento de doenças crônicas, exames, receitas, alimentação, e alertas de saúde, melhorando assim a conscientização da prevenção. Inclui uma IA integrada com banco de dados de saúde que tenha acesso ao histórico médico, responda dúvidas e forneça informações importantes sobre qual é o local correto para buscar atendimento de acordo com a gravidade e evitar filas desnecessárias, centralizando tudo em um só lugar. Além disso, será integrado com o WhatsApp através de um chatbot com IA para oferecer suporte e informações diretamente pelo aplicativo de mensagens.
 
 ---
