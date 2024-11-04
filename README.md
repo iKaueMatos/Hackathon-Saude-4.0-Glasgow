@@ -6,7 +6,7 @@
 
 **Projeto:** Desenvolvido durante o Hackathon Saúde 4.0 pelo time Glasgow composto pelos seguintes integrantes: 
 
-- [**Jéssica Debortolo**](https://www.linkedin.com/in/jessicadebortolo/)** - Product Manager & UX/UI
+- [**Jéssica Debortolo**](https://www.linkedin.com/in/jessicadebortolo/) - Product Manager & UX/UI
 - [**Davi Torres**](https://www.linkedin.com/in/torresdavi/) - Product Manager & Business viability
 - [**Thais Silva**](https://www.linkedin.com/in/thais-silva-7ab630186/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) - UX/UI
 - [**Matheus Monteiro**](https://www.linkedin.com/in/dev-monteiro295/) - Fullstack Developer
