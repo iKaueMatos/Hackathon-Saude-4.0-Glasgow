@@ -1,0 +1,52 @@
+{
+  "name": "glasgow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma-migrate-dev": "npx prisma migrate generate && npx prisma migrate deploy",
+    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts -- --preserveWatchOutput",
+    "start:prod": "NODE_ENV=production nodemon --exec ts-node src/app.ts",
+    "start": "nodemon --exec ts-node src/app.ts",
+    "start:debug": "NODE_ENV=development ts-node --inspect=0.0.0.0:9229 src/app.ts"
+  },
+  "keywords": [],
+  "author":"Kauê de matos oliveira",
+  "email":"ikauedeveloper@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.6",
+    "@types/nodemailer": "^6.4.15",
+    "prisma": "^5.15.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.1",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "handlebars": "^4.7.8",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "nodemon": "^3.1.3",
+    "openai": "^4.52.0",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.8.0",
+    "uuid": "^10.0.0"
+  }
+}
