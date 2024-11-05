@@ -1,70 +1,117 @@
-# Hackaton 4.0 Saúde | Glasgow Back-end 🧠
+# Hackathon 4.0 Saúde | Glasgow Backend 🧠
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/iKaueMatos/Glasgow)](https://github.com/iKaueMatos/Glasgow/issues)
 
-## Visão Geral
+## 📜 Índice
+* 🔍 Visão Geral
+* 🛠️ Tecnologias Utilizadas
+* 🔧 Ferramentas Adicionais
+* 📈 Funcionalidades
+* 🔐 Serviço de Autenticação
+* 📝 Serviço de Acompanhamento e Consultas Médicas
+* 🖥️ Chatbot de Suporte via WhatsApp
+* 💾 Integração com Banco de Dados
+* 💻 Como Rodar Localmente
+* 🎯 Contribuições
+* 📞 Contato
 
-PrimárIA é um software web e mobile de atenção primária à saúde, destinado a ajudar
-pacientes no acompanhamento de doenças crônicas, exames, receitas, alimentação, e
-alertas de saúde, melhorando assim a conscientização da prevenção. Inclui uma IA
-integrada com banco de dados de saúde que tenha acesso ao histórico médico, responda
-dúvidas e forneça informações importantes sobre qual é o local correto para buscar
-atendimento de acordo com a gravidade e evitar filas desnecessárias, centralizando tudo
-em um só lugar. Além disso, será integrado com o WhatsApp através de um chatbot com
-IA para oferecer suporte e informações diretamente pelo aplicativo de mensagens.
+---
 
-## Tecnologias Utilizadas 🛠️
+## 🔍 Visão Geral
+O projeto PrimárIA foi desenvolvido durante o Hackathon Saúde 4.0 com o objetivo de criar uma plataforma de atenção primária à saúde, facilitando o acompanhamento de pacientes com doenças crônicas. Este sistema oferece suporte através de uma inteligência artificial integrada que acessa o histórico médico, fornece respostas para dúvidas e orienta sobre os locais mais adequados para atendimento conforme a gravidade dos casos, evitando filas desnecessárias. O PrimárIA centraliza informações de saúde em um só lugar e permite que pacientes recebam suporte e alertas diretamente pelo WhatsApp, através de um chatbot de IA.
 
-- Node.js
-- Express.js
-- TypeScript
-- Prisma
-- Docker
-- MySQL
+---
 
-## Documentação da API
+## 🛠️ Tecnologias Utilizadas
+* **Node.js**: Runtime para construção de aplicações backend.
+* **Express.js**: Framework web para construção de APIs.
+* **TypeScript**: Superset do JavaScript com tipagem estática.
+* **Prisma**: ORM para gerenciamento de dados e integração com o banco de dados.
+* **Docker**: Para containerização e facilidade de deploy.
+* **MySQL**: Banco de dados relacional.
 
-link: [visualizar](https://documenter.getpostman.com/view/32899753/2sA3XY8JPA)
+---
 
-## Pré-requisitos 💡
+## 🔧 Ferramentas Adicionais
+* **Docker Compose**: Facilita a configuração de ambientes de desenvolvimento.
+* **Swagger**: Documentação interativa da API.
+* **Postman**: Testes manuais e automação de testes de API.
+* **Jest**: Para testes unitários e de integração.
+* **Axios**: Biblioteca para fazer requisições HTTP.
 
-1. Docker
-2. WSL
+---
 
-## Configuração 🔧
+## 📈 Funcionalidades
+* **Acompanhamento de Doenças Crônicas**: Facilita o monitoramento e armazenamento de informações sobre doenças crônicas e exames.
+* **Receitas e Dietas**: Mantém o registro e atualização de receitas médicas e planos de alimentação.
+* **Alertas de Saúde**: Notificações para o acompanhamento preventivo de saúde.
+* **Chatbot com IA para Suporte**: Suporte por meio de chatbot no WhatsApp, respondendo dúvidas comuns e alertas personalizados.
 
-### Variáveis de Ambiente
+---
 
-- `NODE_ENV`: Ambiente de execução do Node.js (`development`, `production`, etc.)
-- `DB_HOST`: Host do banco de dados MySQL
-- `DB_PORT`: Porta do banco de dados MySQL
-- `DB_DATABASE`: Nome do banco de dados MySQL
-- `DB_USER`: Usuário do banco de dados MySQL
-- `DB_PASSWORD`: Senha do usuário do banco de dados MySQL
-- `DATABASE_URL`: URL de conexão com o banco de dados MySQL
-- Outras variáveis necessárias...
+## 🔐 Serviço de Autenticação
+A aplicação utiliza autenticação baseada em JWT para garantir acesso seguro às funcionalidades, com armazenamento de senhas criptografadas.
 
-### Instalação 📄
+---
 
-1. Clone o repositório: `git clone https://github.com/iKaueMatos/Glasgow-Backend/edit/glasdow.V.1.0.1`
-2. Instale as dependências: `npm install`
+## 📝 Serviço de Acompanhamento e Consultas Médicas
+Este serviço acessa o banco de dados para buscar informações do histórico médico dos pacientes, permitindo respostas rápidas e eficazes para consultas sobre exames, receitas e orientações de saúde.
 
-### Docker 🐳
+---
 
-Para rodar o projeto com Docker:
+## 🖥️ Chatbot de Suporte via WhatsApp
+A plataforma oferece suporte direto aos pacientes por meio de um chatbot integrado ao WhatsApp, permitindo que usuários façam consultas sobre medicamentos, agendamento de exames e recebam lembretes de saúde.
 
-**Atenção: ** rodando o projeto com docker todo o ambiente do back-end irar ser inicializado de maneira simultanea, possibilitando fazer requisições para API.
+---
 
-1. Instale o Docker e o Docker Compose
-2. Execute: `docker-compose up`
+## 💾 Integração com Banco de Dados
+Os dados dos pacientes são armazenados de forma segura em um banco de dados MySQL, com Prisma como ORM, proporcionando consultas e atualizações rápidas e confiáveis.
 
-### Executando o Projeto sem o Docker ⚙️
+---
 
-Atenção: rodando o projeto sem a utilização do docker sera necessário instalar um SGBD na própria maquina. 
+## 💻 Como Rodar Localmente
+1. **Pré-requisitos**:
+   * Docker e Docker Compose instalados.
+   * Configuração das variáveis de ambiente.
 
-- **Desenvolvimento**: `npm run start:dev`
-- **Produção**: `npm run start:prod`
+2. **Instalar Dependências**:
+   ```bash
+   npm install
+   ```
 
-## Licença
-Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+3. **Configurar Variáveis de Ambiente**:
+   Crie um arquivo `.env` e defina as variáveis, como `NODE_ENV`, `DB_HOST`, `DB_USER`, `DB_PASSWORD`, entre outras.
+
+4. **Iniciar o Docker Compose**:
+   ```bash
+   docker-compose up -d
+   ```
+
+5. **Iniciar o Servidor**:
+   ```bash
+   npm run start:dev
+   ```
+
+6. **Acessar o Swagger para Documentação**:
+   Acesse `http://localhost:3000/api` para explorar a documentação e testar os endpoints.
+
+---
+
+## 🎯 Contribuições
+Contribuições são bem-vindas! Abra um **Pull Request** ou **Issue** para colaborar com melhorias e novas funcionalidades.
+
+**Como Contribuir**:
+1. Faça um fork do repositório.
+2. Crie uma branch: `git checkout -b feature/nova-funcionalidade`.
+3. Adicione seus commits e envie um Pull Request.
+
+---
+
+## 📞 Contato
+Para dúvidas ou sugestões, entre em contato:
+
+**Email**: ikauedeveloper@gmail.com  
+**LinkedIn**: [ikauematos](https://www.linkedin.com/in/ikauematos/)  
+
+---
