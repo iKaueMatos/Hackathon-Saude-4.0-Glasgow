@@ -14,7 +14,8 @@
 
 ---
 
-**Nome do Produto:** PrimárIA
+- **Nome do Produto:** PrimárIA
+- [**Pitch**](https://docs.google.com/presentation/d/195WOvANoXRZE6Qj7ikJaVdApyoR9wYWYHHBeDtGjkr0/edit#slide=id.g2e6f40117f1_3_2598)
 
 **Resumo do Produto:**
 
